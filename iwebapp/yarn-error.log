@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add native-base --save
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install
 
 PATH: 
-  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Git\cmd;D:\Android\Sdk\platform-tools;C:\Program Files\nodejs\;C:\Users\SithijaShehara\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\SithijaShehara\AppData\Local\Programs\Python\Python37-32\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\SithijaShehara\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Users\SithijaShehara\AppData\Local\Yarn\bin;E:\My Soft\VS\Microsoft VS Code\bin;D:\Android\Sdk\platform-tools;C:\Users\SithijaShehara\AppData\Roaming\npm;E:\My Soft\InteliJ\New folder\IntelliJ IDEA 2019.2\bin;;E:\My Soft\InteliJ\New folder (2)\WebStorm 2019.2.3\bin;;E:\My Soft\Python\PyCharm Community Edition 2019.3\bin;
+  C:\Program Files\Python38\Scripts\;C:\Program Files\Python38\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Git\cmd;D:\Android\Sdk\platform-tools;C:\Program Files\nodejs\;C:\Users\SithijaShehara\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\SithijaShehara\AppData\Local\Programs\Python\Python37-32\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\SithijaShehara\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Users\SithijaShehara\AppData\Local\Yarn\bin;E:\My Soft\VS\Microsoft VS Code\bin;D:\Android\Sdk\platform-tools;C:\Users\SithijaShehara\AppData\Roaming\npm;E:\My Soft\InteliJ\New folder\IntelliJ IDEA 2019.2\bin;;E:\My Soft\InteliJ\New folder (2)\WebStorm 2019.2.3\bin;;E:\My Soft\PyCharm\PyCharm Community Edition 2019.3\bin;;E:\My Soft\Python\PyCharm Edu 2019.3\bin;
 
 Yarn version: 
   1.15.2
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: connect ETIMEDOUT 104.16.17.35:443
+  Error: connect ETIMEDOUT 104.16.20.35:443
       at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1106:14)
 
 npm manifest: 
@@ -28,21 +28,22 @@ npm manifest:
       "eject": "expo eject"
     },
     "dependencies": {
-      "firebase": "^7.5.0",
+      "@react-native-community/async-storage": "^1.7.1",
       "expo": "~36.0.0",
+      "firebase": "^5.7.3",
       "react": "~16.9.0",
       "react-dom": "~16.9.0",
       "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
-      "react-native-web": "~0.11.7",
       "react-native-gesture-handler": "^1.5.1",
       "react-native-reanimated": "^1.4.0",
       "react-native-screens": "1.0.0-alpha.23",
+      "react-native-web": "~0.11.7",
       "react-navigation": "^4.0.10",
       "react-navigation-stack": "^1.10.3"
     },
     "devDependencies": {
-      "babel-preset-expo": "~8.0.0",
-      "@babel/core": "^7.0.0"
+      "@babel/core": "^7.0.0",
+      "babel-preset-expo": "~8.0.0"
     },
     "private": true
   }
@@ -1287,6 +1288,11 @@ Lockfile:
     version "1.1.0"
     resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
     integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
+  
+  "@react-native-community/async-storage@^1.7.1":
+    version "1.7.1"
+    resolved "https://registry.yarnpkg.com/@react-native-community/async-storage/-/async-storage-1.7.1.tgz#ef2104d865de61ad91bba66613e57e689ff4e6a1"
+    integrity sha512-/oX/x+EU4xNaqIaC/epVKzO8XghzImPA7l8cLz3USEFmtFiXFjBbTeeIFjjEm/u4/cv38Wi1xMEa10PHIWygRg==
   
   "@react-native-community/cli-debugger-ui@^3.0.0":
     version "3.0.0"
