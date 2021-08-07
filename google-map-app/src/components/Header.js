@@ -30,7 +30,7 @@ const Header = () => {
             <LocationOnIcon />
           </IconButton>
           <Typography variant="h6" color="inherit">
-            React Google Map Integration
+            Leopard Tracker 🌍 🐯
           </Typography>
         </Toolbar>
       </AppBar>
