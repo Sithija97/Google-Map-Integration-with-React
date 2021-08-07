@@ -24,7 +24,7 @@ function MapView() {
 
   const { isLoaded, LoadError } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "AIzaSyCys-507Nh4ytNhHnYH7uiVpL5DswGL1eg",
+    googleMapsApiKey: process.env.GOOGLE_MAP_API_KEY,
     libraries,
   });
 
