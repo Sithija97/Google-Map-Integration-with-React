@@ -59,7 +59,7 @@ function MapView() {
 
   return (
     <div>
-      <Locate />
+      <Locate panTo={panTo} />
       <Searchbar panTo={panTo} />
       <GoogleMap
         mapContainerStyle={mapContainerStyle}

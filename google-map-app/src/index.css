@@ -40,4 +40,5 @@ code {
   z-index: 1;
   background: none;
   border: none;
+  cursor: pointer;
 }

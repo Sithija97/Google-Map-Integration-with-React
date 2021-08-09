@@ -1,10 +1,20 @@
 import React from "react";
 import CompassLogo from "../assests/compass-transparent-png-21.png";
-function Locate() {
+function Locate({ panTo }) {
   return (
     <button
       className="locate"
-      onClick={() => console.log("clicked on locate button")}
+      onClick={() => {
+        navigator.geolocation.getCurrentPosition(
+          (position) => {
+            panTo({
+              lat: position.coords.latitude,
+              lng: position.coords.longitude,
+            });
+          },
+          () => null
+        );
+      }}
     >
       <img className="locate" src={CompassLogo} alt="compass - locate me" />
     </button>
