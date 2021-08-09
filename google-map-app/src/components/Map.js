@@ -9,6 +9,7 @@ import {
 import { formatRelative } from "date-fns";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import Searchbar from "./Searchbar";
+import Locate from "./Locate";
 
 const libraries = ["places"];
 const mapContainerStyle = {
@@ -58,6 +59,7 @@ function MapView() {
 
   return (
     <div>
+      <Locate />
       <Searchbar panTo={panTo} />
       <GoogleMap
         mapContainerStyle={mapContainerStyle}
@@ -85,7 +87,7 @@ function MapView() {
           >
             <div>
               <h2>Leopard Spotted ! 🐆 🐯 </h2>
-              <p>Spotted {formatRelative(selected.time, new Date())}</p>
+              <h4>Spotted {formatRelative(selected.time, new Date())}</h4>
             </div>
           </InfoWindow>
         ) : null}

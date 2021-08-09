@@ -9,7 +9,6 @@ import {
   ComboboxPopover,
   ComboboxList,
   ComboboxOption,
-  ComboboxOptionText,
 } from "@reach/combobox";
 import "@reach/combobox/styles.css";
 
@@ -50,10 +49,12 @@ function Searchbar({ panTo }) {
           placeholder="Enter a place"
         />
         <ComboboxPopover>
-          {status === "OK" &&
-            data.map(({ place_id, description }) => (
-              <ComboboxOption key={place_id} value={description} />
-            ))}
+          <ComboboxList>
+            {status === "OK" &&
+              data.map(({ place_id, description }) => (
+                <ComboboxOption key={place_id} value={description} />
+              ))}
+          </ComboboxList>
         </ComboboxPopover>
       </Combobox>
     </div>
