@@ -26,7 +26,7 @@ export default function Login() {
     try {
       const { createdSessionId, signIn, signUp, setActive } =
         await startOAuthFlow({
-          redirectUrl: Linking.createURL("/home", { scheme: "myapp" }),
+          redirectUrl: Linking.createURL("/(tabs)/home", { scheme: "myapp" }),
         });
 
       if (createdSessionId) {
