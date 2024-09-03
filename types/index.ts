@@ -3,3 +3,8 @@ export interface TokenCache {
   saveToken: (key: string, token: string) => Promise<void>;
   clearToken?: (key: string) => void;
 }
+
+export type ISlider = {
+  name: string;
+  imageUrl: string;
+};
