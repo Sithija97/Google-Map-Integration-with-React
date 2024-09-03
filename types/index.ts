@@ -4,7 +4,15 @@ export interface TokenCache {
   clearToken?: (key: string) => void;
 }
 
-export type ISlider = {
+export interface ISlider {
   name: string;
   imageUrl: string;
-};
+}
+
+export interface IPet {
+  age: string;
+  breed: string;
+  category: string;
+  imageUrl: string;
+  name: string;
+}

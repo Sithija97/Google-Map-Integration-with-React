@@ -12,13 +12,9 @@ export default function Slider() {
   }, []);
 
   const getSliders = async () => {
-    console.log("first :", sliderData);
     const snapshot = await getDocs(collection(db, "sliders"));
-    snapshot.forEach((doc) => {
-      console.log(doc.data());
-      const data: ISlider[] = snapshot.docs.map((doc) => doc.data() as ISlider);
-      setSliderData(data);
-    });
+    const data: ISlider[] = snapshot.docs.map((doc) => doc.data() as ISlider);
+    setSliderData(data);
   };
   return (
     <View style={styles.container}>
